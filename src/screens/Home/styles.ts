@@ -28,4 +28,10 @@ export const styles = StyleSheet.create({
     color: "#FFF",
     fontSize: 24,
   },
+  button: {
+    width: 56,
+    heigh: 56,
+    borderRadius: 5,
+    backgroundColor: "#31CF67",
+  },
 });
