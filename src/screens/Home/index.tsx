@@ -11,6 +11,9 @@ export function Home() {
         placeholder="Nome do participante"
         placeholderTextColor="#6B6B6B"
       />
+      <TouchableOpacity>
+        <Text style={styles.buttonText}>Clique Aqui!</Text>
+      </TouchableOpacity>
     </View>
   );
 }
