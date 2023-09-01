@@ -24,4 +24,8 @@ export const styles = StyleSheet.create({
     padding: 16,
     fontSize: 16,
   },
+  buttonText: {
+    color: "#FFF",
+    fontSize: 24,
+  },
 });
