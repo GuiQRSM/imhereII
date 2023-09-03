@@ -11,7 +11,7 @@ export function Home() {
       <Text style={styles.eventName}>Nome do evento</Text>
       <Text style={styles.eventDate}>Sexta, 4 de outobro de 2023</Text>
 
-      <View>
+      <View style={styles.form}>
         <TextInput
           style={styles.input}
           placeholder="Nome do participante"
