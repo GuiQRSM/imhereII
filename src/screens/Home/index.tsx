@@ -25,6 +25,7 @@ export function Home() {
       </View>
 
       <Participant />
+      <Participant />
     </View>
   );
 }
