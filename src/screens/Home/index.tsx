@@ -52,15 +52,13 @@ export function Home() {
         </TouchableOpacity>
       </View>
 
-      <ScrollView showVerticalSrollIndicator={false}>
-        {Participants.map((Participants) => (
-          <Participant
-            key={Participants}
-            name={Participants}
-            onRemove={() => handleParticipantRemove(Participants)}
-          />
-        ))}
-      </ScrollView>
+      {Participants.map((Participants) => (
+        <Participant
+          key={Participants}
+          name={Participants}
+          onRemove={() => handleParticipantRemove(Participants)}
+        />
+      ))}
     </View>
   );
 }
