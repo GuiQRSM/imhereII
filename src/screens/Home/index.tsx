@@ -52,13 +52,18 @@ export function Home() {
         </TouchableOpacity>
       </View>
 
-      {Participants.map((Participants) => (
-        <Participant
-          key={Participants}
-          name={Participants}
-          onRemove={() => handleParticipantRemove(Participants)}
-        />
-      ))}
+      <FlatList
+        data={Participants}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <Participant
+            key={item}
+            name={item}
+            onRemove={() => handleParticipantRemove(item)}
+          />
+        )}
+        showVerticalScrollIndicator={false}
+      />
     </View>
   );
 }
