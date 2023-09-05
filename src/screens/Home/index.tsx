@@ -4,6 +4,8 @@ import { Participant } from "../../components/Participant";
 import { styles } from "./styles";
 
 export function Home() {
+  const Participants = ["Teoian", "Yrlan", "Erick", "Lucas"];
+
   function handleParticipantAdd() {
     console.log("Clicado!");
   }
