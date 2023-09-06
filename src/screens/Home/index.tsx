@@ -31,6 +31,7 @@ export function Home() {
 
   function handleParticipantAdd() {
     if (Participants.includes("Nivolas")) {
+      return Alert.alert("Incluido!", "Participante já incluído na lista!");
     }
     console.log("Clicado!");
   }
