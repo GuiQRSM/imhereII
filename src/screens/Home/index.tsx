@@ -37,6 +37,8 @@ export function Home() {
   }
 
   function handleParticipantRemove(name: String) {
+    Alert.alert("Remover!", `Deseja remover o participante ${name}`);
+
     console.log(`Participante ${name} removido!`);
   }
 
