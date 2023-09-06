@@ -2,8 +2,10 @@ import { StatusBar } from "react-native";
 import { Home } from "./src/screens/Home";
 
 export default function App() {
-  <>
-    <StatusBar />
-    return <Home />;
-  </>;
+  return (
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="red" />
+      <Home />
+    </>
+  );
 }
