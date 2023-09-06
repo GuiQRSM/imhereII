@@ -33,13 +33,19 @@ export function Home() {
     if (Participants.includes("Nivolas")) {
       return Alert.alert("Incluido!", "Participante já incluído na lista!");
     }
-    console.log("Clicado!");
   }
 
   function handleParticipantRemove(name: String) {
-    Alert.alert("Remover!", `Deseja remover o participante ${name}`);
-
-    console.log(`Participante ${name} removido!`);
+    Alert.alert("Remover!", `Deseja remover o participante ${name}?`, [
+      {
+        text: "Sim",
+        onPress: () => Alert.alert("Deletado!"),
+      },
+      {
+        text: "Não",
+        style: "cancel",
+      },
+    ]);
   }
 
   return (
