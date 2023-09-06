@@ -5,6 +5,7 @@ import {
   TextInput,
   TouchableOpacity,
   FlatList,
+  Alert,
 } from "react-native";
 import { Participant } from "../../components/Participant";
 import { styles } from "./styles";
@@ -29,6 +30,8 @@ export function Home() {
   ];
 
   function handleParticipantAdd() {
+    if (Participants.includes("Nivolas")) {
+    }
     console.log("Clicado!");
   }
 
