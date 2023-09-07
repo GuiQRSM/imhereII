@@ -11,22 +11,11 @@ import { Participant } from "../../components/Participant";
 import { styles } from "./styles";
 
 export function Home() {
+
+  useState({'Teoian'})
+
   const Participants = [
     "Teoian",
-    "Yrlan",
-    "Erick",
-    "Lucas",
-    "Paulo",
-    "Juninho",
-    "Sirlan",
-    "Robson",
-    "Miles",
-    "Reptile",
-    "Cleiton",
-    "Nivolas",
-    "Periquito",
-    "Thiago",
-    "Yago",
   ];
 
   function handleParticipantAdd() {
