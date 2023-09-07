@@ -12,7 +12,7 @@ import { styles } from "./styles";
 
 export function Home() {
 
-  useState({'Teoian'})
+  const [participants, setParticipants] = useState({'Teoian'})
 
   const Participants = [
     "Teoian",
