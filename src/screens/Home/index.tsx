@@ -17,6 +17,8 @@ export function Home() {
     if (participants.includes("Nivolas")) {
       return Alert.alert("Incluido!", "Participante já incluído na lista!");
     }
+
+    setParticipants((prevState) => [...prevState, "Yrlan"]);
   }
 
   function handleParticipantRemove(name: String) {
