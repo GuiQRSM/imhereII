@@ -11,15 +11,10 @@ import { Participant } from "../../components/Participant";
 import { styles } from "./styles";
 
 export function Home() {
-
-  const [participants, setParticipants] = useState({'Teoian'})
-
-  const Participants = [
-    "Teoian",
-  ];
+  const [participants, setParticipants] = useState(["Teoian"]);
 
   function handleParticipantAdd() {
-    if (Participants.includes("Nivolas")) {
+    if (participants.includes("Nivolas")) {
       return Alert.alert("Incluido!", "Participante já incluído na lista!");
     }
   }
@@ -54,7 +49,7 @@ export function Home() {
       </View>
 
       <FlatList
-        data={Participants}
+        data={participants}
         keyExtractor={(item) => item}
         renderItem={({ item }) => (
           <Participant
