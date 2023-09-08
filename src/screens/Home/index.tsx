@@ -20,6 +20,7 @@ export function Home() {
     }
 
     setParticipants((prevState) => [...prevState, participantName]);
+    setParticipant("");
   }
 
   function handleParticipantRemove(name: String) {
@@ -46,6 +47,7 @@ export function Home() {
           placeholder="Nome do participante"
           placeholderTextColor="#6B6B6B"
           onChangeText={(textInput) => setParticipantName(textInput)}
+          value={participantName}
         />
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
           <Text style={styles.buttonText}> + </Text>
