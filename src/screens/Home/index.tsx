@@ -15,11 +15,11 @@ export function Home() {
   const [participantName, setParticipantName] = useState("");
 
   function handleParticipantAdd() {
-    if (participants.includes("Nivolas")) {
+    if (participants.includes(participantName)) {
       return Alert.alert("Incluido!", "Participante já incluído na lista!");
     }
 
-    setParticipants((prevState) => [...prevState, "Yrlan"]);
+    setParticipants((prevState) => [...prevState, participantName]);
   }
 
   function handleParticipantRemove(name: String) {
