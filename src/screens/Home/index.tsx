@@ -46,7 +46,7 @@ export function Home() {
           style={styles.input}
           placeholder="Nome do participante"
           placeholderTextColor="#6B6B6B"
-          onChangeText={(textInput) => setParticipantName(textInput)}
+          onChangeText={setParticipantName}
           value={participantName}
         />
         <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
