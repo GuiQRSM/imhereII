@@ -12,6 +12,7 @@ import { styles } from "./styles";
 
 export function Home() {
   const [participants, setParticipants] = useState(["Teoian"]);
+  const [participantName, setParticipantName] = useState();
 
   function handleParticipantAdd() {
     if (participants.includes("Nivolas")) {
