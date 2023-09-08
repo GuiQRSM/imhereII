@@ -20,7 +20,7 @@ export function Home() {
     }
 
     setParticipants((prevState) => [...prevState, participantName]);
-    setParticipant("");
+    setParticipantName("");
   }
 
   function handleParticipantRemove(name: String) {
