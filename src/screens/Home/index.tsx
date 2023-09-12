@@ -68,6 +68,11 @@ export function Home() {
           />
         )}
         showVerticalScrollIndicator={false}
+        ListEmptyComponent={() => (
+          <Text style={styles.listEmptyText}>
+            Ninguém Adicionado ainda? Adicione participantes na sua lista.
+          </Text>
+        )}
       />
     </View>
   );
